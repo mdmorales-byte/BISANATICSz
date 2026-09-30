@@ -4,8 +4,6 @@ This template provides a minimal setup to get React working in Vite with HMR and
 
 Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
 ## React Compiler
 
@@ -30,3 +28,34 @@ If you are developing a production application, we recommend enabling type-aware
 ```
 
 See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+# Mini Management System - Frontend
+
+React, TypeScript, and Vite frontend for the Mini Management System prototype.
+
+## Source layout
+
+```text
+src/
+  assets/       Imported images and other bundled assets
+  components/   Shared UI components
+  pages/        Page-level views
+  services/     API and external-service access
+  types/        Shared TypeScript types
+  utils/        Small reusable helpers
+  App.tsx       Application root
+  main.tsx      Browser entry point
+```
+
+Static files served without bundling belong in `public/`. Keep feature-specific code close to the feature as the application grows.
+
+## Commands
+
+Run these commands from the `frontend/` directory:
+
+```sh
+npm install
+npm run dev
+npm run build
+npm run lint
+npm run preview
+```
